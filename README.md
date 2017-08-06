@@ -143,7 +143,7 @@ export class AppModule { }
 If you want to configure a custom `TranslateLoader` while using [AoT compilation](https://angular.io/docs/ts/latest/cookbook/aot-compiler.html) or [Ionic](http://ionic.io/), you must use an exported function instead of an inline function.
 
 ```ts
-export function createTranslateLoader(http: Http) {
+export function createTranslateLoader(http: HttpClient) {
     return new TranslateHttpLoader(http, './assets/i18n/', '.json');
 }
 
